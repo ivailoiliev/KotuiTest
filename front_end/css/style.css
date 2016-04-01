@@ -1,0 +1,259 @@
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+#content {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -200px;
+}
+.footer, .push {
+height: 4em;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  background-color:#f7f7f7;
+  color:#131313;
+  margin:0;
+  min-width:750px;
+  font-size:16px;
+}
+header {
+  font-family: 'Oswald', serif;
+  font-weight: normal;
+  font-size: 70px;
+  padding: 0;
+  margin: 0;
+  color:#131313;
+  text-align:center;
+  background-color:white;
+  padding:50px;
+}
+footer{
+    text-align: center;
+    padding:40px;
+    height:20px;
+    background-color: white;
+}
+.box{
+    width:70%;
+    text-align:center;
+    margin: 100px auto;
+    background-color: #fcfcfc;padding:50px;
+}
+h1{
+    font-size:50px;
+    margin:0 0 30px 0;
+    font-weight:200;
+}
+input[type='text']{
+    color:black;
+    height:40px;
+    border:none;
+    border-radius:3px;
+    line-height:40px;
+    margin:0 10px;
+    padding:0 10px;
+    font-size:16px;
+    background-color:white;
+}
+button{
+    background-color:#f2f2f2;
+    color:black;
+    height:40px;
+    border:none;
+    border-radius:3px;
+    line-height:40px;
+    margin:0 10px;
+    padding:0 10px;
+    font-size:16px;
+    transition: 0.5s;
+    cursor: pointer;
+    line-height:25px;
+}
+button:hover{
+    background-color:#ffc672;
+}
+.card{
+    width:200px;
+    height:250px;
+    background-color:#f7f7f7;
+    display:inline-block;
+    margin-right:20px;
+    line-height:40px;
+    margin-bottom:20px;
+}
+.card input{
+    margin:0;
+}
+.card:last-child{
+    margin-right:0;
+}
+.card-image{
+    width:200px;
+    height:200px;
+    background-size:cover;
+    background-position:center center;
+    margin-bottom:5px;
+}
+.card button{
+    width:calc(100% - 10px);
+    margin:0;
+}
+#timer{
+    position:absolute;
+    width:50px;
+    height:30px;
+    font-size:25px;
+    top:30px;
+    right:30px;
+}
+#stack{
+    width:120px;
+    height:1px;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+#stack div{
+    width:120px;
+    height:120px;
+    background-size:cover;
+    background-position:center center;
+    position: absolute;
+}
+#preparation{
+    position:relative;
+}
+#game .card{}
+
+#waiting,#preparation,#game,#results{
+    display:none;
+}
+.fifty{
+    width:calc(50% - 20px);
+    float:left;
+    padding:0 10px;
+}
+.points{
+    font-weight:200;
+    font-size:70px;
+    text-align: center;
+}
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.winner-label{
+    font-size:28px;
+    font-weight:200;
+    text-align: center;
+}
+.wrong-cards-container input{
+    display:none;
+}
+.wrong-cards-container .card{
+}
+
+
+
+
+
+
+
+
+/* LOADER */
+.cs-loader {
+    position:relative;
+    margin-top:50px;
+}
+.cs-loader-inner {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: calc(100% - 200px);
+  color: #000;
+  padding: 0 100px;
+  text-align: center;
+  font-size:5px;
+}
+
+.cs-loader-inner label {
+  font-size: 20px;
+  opacity: 0;
+  display:inline-block;
+}
+
+@keyframes lol {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes lol {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+}
+
+.cs-loader-inner label:nth-child(6) {
+  -webkit-animation: lol 3s infinite ease-in-out;
+  animation: lol 3s infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(5) {
+  -webkit-animation: lol 3s 100ms infinite ease-in-out;
+  animation: lol 3s 100ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(4) {
+  -webkit-animation: lol 3s 200ms infinite ease-in-out;
+  animation: lol 3s 200ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(3) {
+  -webkit-animation: lol 3s 300ms infinite ease-in-out;
+  animation: lol 3s 300ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(2) {
+  -webkit-animation: lol 3s 400ms infinite ease-in-out;
+  animation: lol 3s 400ms infinite ease-in-out;
+}
+
+.cs-loader-inner label:nth-child(1) {
+  -webkit-animation: lol 3s 500ms infinite ease-in-out;
+  animation: lol 3s 500ms infinite ease-in-out;
+}

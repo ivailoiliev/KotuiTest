@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kotui app</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<div id="content">
+    <header>
+        KOTUI
+        <div id="timer">
+            60
+        </div>
+    </header>
+<div id="login" class="box">
+    <h1>Start a game</h1>
+    <p>Hello,<input type="text" id="name" placeholder="Your Name"></p>
+
+    <p>Do you want to <button id="startgame">play a game</button>?</p>
+</div>
+<div id="waiting" class="box">
+    Waiting for other player
+    <div class="cs-loader">
+      <div class="cs-loader-inner">
+        <label>●</label>
+        <label>●</label>
+        <label>●</label>
+        <label>●</label>
+        <label>●</label>
+        <label>●</label>
+      </div>
+    </div>
+</div>
+<div id="preparation" class="box">
+    <h1>Choose a card for your opponnent:</h1>
+    <div class="card" id="preparationCard1">
+        <div class="card-image">
+        </div>
+        <button>Choose</button>
+    </div>
+    <div class="card" id="preparationCard2">
+        <div class="card-image">
+        </div>
+        <button>Choose</button>
+    </div>
+    <div class="card" id="preparationCard3">
+        <div class="card-image">
+        </div>
+        <button>Choose</button>
+    </div>
+    <div id="stack">
+    </div>
+</div>
+<div id="game" class="box">
+    <h1>Try to guess all images:</h2>
+    <div id="gameCardContainer">
+
+    </div>
+    <button id="sendResults">Send</button>
+</div>
+<div id="results" class="box">
+    <h1>Results</h1>
+    <div class="fifty" id="resultsMe">
+        <div class="points"></div>
+        <div class="winner-label"></div>
+        <div class="wrong-cards-container"></div>
+    </div>
+    <div class="fifty" id="resultsYou">
+        <div class="points"></div>
+        <div class="winner-label"></div>
+        <div class="wrong-cards-container"></div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+</div>
+
+<footer>A mini web game developed by Intracol.</footer>
+</body>
+
+</html>
